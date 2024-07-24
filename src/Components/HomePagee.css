@@ -1,0 +1,43 @@
+.home{
+    margin-top: 20px;
+}
+
+
+.homeSlide ul{
+    position: absolute;
+    bottom: 20px;
+}
+
+.homeSlide ul li{
+    border: 2px solid #b8b7b7;
+    border-radius: 50%;
+    padding: 10px;
+}
+
+.homeSlide ul li button{
+    margin-bottom: 40px;
+    background: transparent  !important;
+    color: transparent !important;
+    margin-bottom: 100px;
+}
+
+.homeSlide ul li button::before{
+    font-size: 15px;
+    color: #ffffff;
+    position: absolute;
+    top: 2px;
+    left: 0;
+    margin: auto;
+}
+
+
+
+.homeSlide .box .right{
+    width:40% ;
+   
+    }
+
+    .homeSlide .box  img{
+        width: 100%;
+        height: 100%;
+    }

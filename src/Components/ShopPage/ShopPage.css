@@ -1,0 +1,657 @@
+
+/*tihs fonts */
+@import url('https://fonts.googleapis.com/css2?family=Rubik:ital,wght@0,300..900;1,300..900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300..800;1,300..800&display=swap');
+/*tihs fonts */
+
+/*Start scrollbar*/
+
+* {
+    scrollbar-color: rgba(223, 223, 223, 0.9) rgba(255, 255, 255, 0);
+    scrollbar-width: thin;
+}
+
+/*End scrollbar*/
+
+/*-=------------------------------------------------------------*/
+/*Start Style  Section_1 BakGround*/
+
+.Section_1{
+    height:80vh;
+    width: 100%;
+    overflow: hidden;
+    position: relative;
+    margin-bottom: 0;
+    background-color: #fbf8f3;
+}
+
+
+
+.Section_1  .Bacground{
+    width: 100%;
+    height: 60%;
+    margin-top: 7%;
+    background-image: url(../Pages//img//img_5/bg1.jpg);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-repeat: no-repeat;
+    position: relative;
+    background-size: cover;
+}
+
+
+.Section_1  .Bacground::after{
+    content: "";
+    background-color: #00000065;
+    width: 100%;
+    height: 100%;
+      position: absolute;
+}
+
+.Section_1 .Bacground  .content{
+ position: absolute;
+ top: 26%;
+ left: 40%;
+ z-index: 1222;
+}
+
+.Section_1 .Bacground  .content h2{
+    color: #fff;
+    font-size: 40px;
+    font-weight: 600;
+}
+
+.Section_1 .Bacground  .content p{
+    text-align: center;
+    font-size: 18px;
+    font-weight: 500;
+
+}
+
+.Section_1 .Bacground  .content p::selection,
+.Section_1 .Bacground  .content h2::selection,
+.Section_1 .Bacground  .content span::selection{
+background-color: #cc0d39;
+color: #fff;
+}
+
+
+/*-=------------------------------------------------------------*/
+/*End  Style  Section_1 BakGround*/
+
+
+
+/*===================--------------------------------------=====================*/
+/*start Section left_content*/
+
+.Section_2{
+    background-color: #fbf8f3; 
+    height: 100vh;
+
+} 
+  .Section_2 .container-fluid .Slider_left{
+
+    border-right: 1px  solid rgb(217, 217, 220);
+    height: 100vh;
+    border-top: 1px solid rgb(217, 217, 220);
+    border-radius: 5px;
+  }
+  
+.Section_2 .container-fluid .Slider_left .top_slider_left{
+    display: flex;
+    margin-bottom: 4%;
+    margin-top: 6%;
+    margin-left: 10%;
+}
+.Section_2 .container-fluid .Slider_left .top_slider_left .svg{
+margin-top: 3%;
+}
+
+.Section_2 .container-fluid .Slider_left .top_slider_left p{
+    margin-left: 8%;
+    font-size: 23px;
+    font-weight: 500;
+    font-family: "Rubik", 'sans-serif';
+}
+.Section_2 .container-fluid .Slider_left .top_slider_left p::selection,
+
+.Section_2 .container-fluid .Slider_left .Price_left_slider h1::selection,
+.Section_2 .container-fluid .Slider_left .Price_left_slider .maiandmaxprice p::selection,
+.Section_2 .container-fluid .Slider_left .Price_left_slider .maiandmaxprice span::selection
+{
+    background-color: #cc0d39;
+    color: #fff;
+}
+
+/*{/**----------------- secund input-======================*/
+
+.Section_2 .container-fluid .Slider_left .secund_input .Input_in{
+ padding: 15px 50px;
+ border: none;   
+ border: 1px solid #000;
+ border-radius: 16px;
+ cursor: pointer;
+}
+.Section_2 .container-fluid .Slider_left .secund_input .Input_in::placeholder{
+    color: #000;
+    font-size: 17px;
+}
+
+
+/***========================== Third Price=============================*/
+
+.Section_2 .container-fluid .Slider_left .Price_left_slider h1{
+    margin-top: 6%;
+    font-size: 19px;
+    font-weight: 500;
+    margin-bottom: 5%;
+    margin-left: 4%;
+}
+
+.Section_2 .container-fluid .Slider_left .Price_left_slider .card .circle{
+    display: flex;
+    justify-content: space-between;
+}
+
+
+.Section_2 .container-fluid .Slider_left .Price_left_slider .card .circle .circle_1{
+    width: 10px;
+    height: 10px;
+    background-color: #469ae3;
+    border-radius: 50%;
+    margin-left: 10%;
+    border: 2px solid #0d0d0d;
+    padding: 10px;
+    cursor: pointer;
+    transition: 0.5s;
+}
+.Section_2 .container-fluid .Slider_left .Price_left_slider .card .circle .circle_1:HOVER{
+    background-color:  #0d0d0d;
+    border: 2px solid #469ae3;
+}
+
+
+.Section_2 .container-fluid .Slider_left .Price_left_slider .card .circle .circle_2{
+    width: 10px;
+    height: 10px;
+    background-color: #004cff;
+    border-radius: 50%;
+    margin-left: 10%;
+    margin-right: 10%;
+    cursor: pointer;
+    border: 2px solid #0d0d0d;
+    padding: 10px;
+}  
+.Section_2 .container-fluid .Slider_left .Price_left_slider .card .circle .circle_2:hover{
+    background-color:  #0d0d0d;
+    border: 2px solid #469ae3
+}
+
+
+.Section_2 .container-fluid .Slider_left .Price_left_slider   .maiandmaxprice{
+    display: flex;
+    margin-top: 5%;
+}
+.Section_2 .container-fluid .Slider_left .Price_left_slider .maiandmaxprice p{
+    margin-left: 20%;
+}
+
+/*   ================{/=** 4 Color=================*/
+
+.Section_2 .container-fluid .Slider_left .Price_left_slider  .color h1{
+    font-size: 20px;
+    margin-left: 5%;
+    font-weight: 600;
+    margin-bottom: 5%;
+}
+.Section_2 .container-fluid .Slider_left .Price_left_slider  .color .Color_Circle{
+    display: flex;
+    margin-left: 10%;
+    margin-top: 6%;
+}
+
+.Section_2 .container-fluid .Slider_left .Price_left_slider  .color .Color_Circle .circle1{
+    height: 10px;
+    width: 10px;
+    padding: 10px;
+    border-radius: 50%;
+    background-color: greenyellow;
+    cursor: pointer;
+     margin-right: 10px;
+}
+
+.Section_2 .container-fluid .Slider_left .Price_left_slider  .color .Color_Circle .circle2{
+    height: 10px;
+    width: 10px;
+    padding: 10px;
+    border-radius: 50%;
+    background-color: rgb(255, 8, 0);
+    cursor: pointer;
+     margin-right: 10px;
+}
+
+.Section_2 .container-fluid .Slider_left .Price_left_slider  .color .Color_Circle .circle3{
+    height: 10px;
+    width: 10px;
+    padding: 10px;
+    border-radius: 50%;
+    background-color: rgb(0, 21, 255);
+    cursor: pointer;
+     margin-right: 10px;
+}
+
+.Section_2 .container-fluid .Slider_left .Price_left_slider  .color .Color_Circle .circle4{
+    height: 10px;
+    width: 10px;
+    padding: 10px;
+    border-radius: 50%;
+    background-color: rgb(0, 179, 255);
+    cursor: pointer;
+     margin-right: 10px;
+}
+
+.Section_2 .container-fluid .Slider_left .Price_left_slider  .color .Color_Circle .circle5{
+    height: 10px;
+    width: 10px;
+    padding: 10px;
+    border-radius: 50%;
+    background-color: rgb(255, 162, 0);
+    cursor: pointer;
+     margin-right: 10px;
+}
+
+.Section_2 .container-fluid .Slider_left .Price_left_slider  .color .Color_Circle .circle6{
+    height: 10px;
+    width: 10px;
+    padding: 10px;
+    border-radius: 50%;
+    background-color: black;
+    cursor: pointer;
+     margin-right: 10px;
+}
+
+.Section_2 .container-fluid .Slider_left .Price_left_slider  .color .Color_Circle .circle7{
+    height: 10px;
+    width: 10px;
+    padding: 10px;
+    border-radius: 50%;
+    background-color: rgb(77, 77, 77);
+    cursor: pointer;
+    margin-right: 10px;
+}
+
+.Section_2 .container-fluid .Slider_left .Price_left_slider  .color .Color_Circle .circle1{
+    height: 10px;
+    width: 10px;
+    padding: 10px;
+    border-radius: 50%;
+    background-color: rgb(255, 0, 200);
+    cursor: pointer;
+    margin-right: 10px;
+}
+
+/*=====================start size-==========================*/
+
+.Section_2{
+    height: 100%;
+    margin-bottom: 60px;
+    z-index: 1111111;
+}
+
+.Section_2 .container-fluid .Slider_left  .Size_left_slider .numper_color{
+    display: flex;
+    margin-top: 5%;
+}
+
+.Section_2 .container-fluid .Slider_left   .Size_left_slider  h1{
+    font-size: 20px;
+    margin-left: 5%;
+    font-weight: 600;
+    margin-bottom: 5%;
+}
+
+.Section_2 .container-fluid .Slider_left  .Size_left_slider .numper_color .numper1 {
+transition: 0.5s;
+    border: 1px solid #000;
+padding: 4px;
+margin-right: 10px;
+    color: #000;
+    border-radius: 50%;
+}
+
+.Section_2 .container-fluid .Slider_left  .Size_left_slider .numper_color .numper1:hover{
+    background-color: #cc0d39;
+    color: #fff;
+    cursor: pointer;
+}
+
+
+/*start Section left_content*/
+/*========================================*/
+
+/*-=-------------------------------------------------------------------------------*/
+
+/*start Section Right Card*/
+
+
+
+ .Section_2 .container-fluid .row  .Section_Cards .Cards_Card img{
+    width: 230px;
+    height: 350px;
+    border-radius: 20px;
+    margin-bottom: 10%;
+    transition: 0.5s;
+    }
+    
+   
+ .Section_2 .container-fluid .Section_Cards .Cards_Card .col-md-3 {
+        position: relative;
+        transition: 0.5s;
+    }
+  
+ .Section_2 .container-fluid  .Section_Cards .Cards_Card .col-md-3:hover .info{
+        top: 11%;
+    margin-right: 1%;
+    }
+    
+
+    .Section_2 .container-fluid .Section_Cards .Cards_Card .col-md-3 .info{
+        position: absolute;
+        top: 350%;
+   
+        left: 8%;
+        width: 220px;
+        height: 340px;
+         background-color: #00000057;
+         border-radius: 10px;
+         transition: 0.6s;
+      
+    }
+      
+    
+ .Section_2 .container-fluid 
+ .Section_2 .container-fluid  .Section_Cards .Cards_Card .col-md-3 .info  .caption{
+    padding: 80px ;
+        width: 100%;
+        height: 100%;
+
+    }
+      
+    
+ .Section_2 .container-fluid  .Section_Cards .Cards_Card .col-md-3 .info  .caption h6{
+        background-color: #fff;
+        color: #000;
+        border-radius: 8px;
+        padding: 5px 12px;
+        cursor: pointer;
+        transition: 0.5s;
+    }
+    
+   
+ .Section_2 .container-fluid   .Section_Cards .Cards_Card .col-md-3 .info  .caption h6:hoveR{
+        background-color: #ec0a0a;
+        color: #fff;
+    }
+    
+ .Section_2 .container-fluid  .Section_Cards .Cards_Card .col-md-3 .info  .caption i{
+    margin-left: 10%;
+    margin-bottom: 9%;
+    margin-top: 2%;
+    padding: 6px;
+    color: #000;
+    background-color: #fff;
+    border-radius: 50%;
+    transition: 0.5s;
+    cursor: pointer;
+    }
+    
+ .Section_2 .container-fluid  .Section_Cards .Cards_Card .col-md-3 .info  .caption i:hover{
+        background-color: #ec0a0a;
+        color: #fff;
+    }
+    
+    
+    
+    
+ .Section_2 .container-fluid  .Section_Cards .Cards_Card .footer_content{
+     margin-left: 3%;
+     margin-bottom: 10%;
+    }
+    
+    
+    
+ .Section_2 .container-fluid  .Section_Cards .Cards_Card .footer_content  h3{
+    font-size: 19px;
+    transition: 0.5s;
+    font-weight: 600;
+    }
+   
+ .Section_2 .container-fluid   .Section_Cards .Cards_Card .footer_content  h3:hover{
+        color: #fd2424d8;
+        cursor: pointer;
+    }
+    
+    
+ .Section_2 .container-fluid  .Section_Cards .Cards_Card .footer_content span{
+        position: absolute;
+        left:84%;
+        bottom: 8%;
+        font-weight: 700;
+    }
+    @media (max-width:440) {
+        
+ .Section_2 .container-fluid  .Section_Cards .Cards_Card .footer_content span{
+            position: absolute;
+            left:50%;
+            bottom: 8%;
+            font-weight: 700;
+        }
+    }
+    
+    
+    
+    
+    
+  
+ .Section_2 .container-fluid  .Section_Cards  .Cards_Card  .icon_ic h6{
+    background-color: #fff;
+    padding: 9px 16px;
+    border-radius: 14px;
+    margin-left: 10px;
+    }   
+    
+    /*end style section3 Cards*/
+
+
+
+
+/*End Section Right Card*/
+
+
+
+
+/*------------------------------------------------------------------------------*/
+/*------------------------------------------------------------------------------*/
+
+
+/*** Start Style Footer*/
+
+.Foooter_Section{
+    width: 100%;
+    height: 100%;
+    overflow: hidden;
+    margin-top: 8%;
+background-color: #fdf4d9d0;
+}
+.Foooter_Section .logo_svg{
+    margin-bottom: 7%;
+margin-left:8%;
+}
+
+.Foooter_Section .Footer_content{
+    margin-top: 3%;
+}  
+
+.Foooter_Section .Footer_content .foter_text ul li{
+list-style: none;
+ text-align: start;
+ line-height: 35px;
+ margin-left: 10px;
+}
+
+.Foooter_Section .Footer_content .foter_text ul li::selection{
+    background-color: #cc0d39;
+    color: #fff;
+    border-radius: 5px;
+    
+}
+
+.Foooter_Section .Footer_content .foter_text input{
+border: none;
+padding: 10px 25px;
+margin-left: 8%;
+border: 1px solid #000;
+border-radius: 10px;
+transition: 0.5s;
+background-color: #cf9b01;
+margin-bottom: 10px;
+}  
+
+.Foooter_Section .Footer_content .foter_text input::placeholder{
+    color: #fff;
+}
+
+.Foooter_Section .Footer_content .foter_text input:hoveR{
+    cursor: pointer;
+    border: 3px solid #ecb719;
+}
+
+
+.Foooter_Section .Footer_content .col-md-3 .info_card{
+    display: flex;
+ margin-bottom: 2%;
+}
+.Foooter_Section .Footer_content .col-md-3 h3{
+    margin-bottom: 8%;
+    font-size: 25px;
+    font-weight: 500;
+    font-family: "Rubik", 'sans-serif';
+}
+.Foooter_Section .Footer_content .col-md-3 h3::selection,
+.Foooter_Section .Footer_content .col-md-3 p::selection,
+.Foooter_Section .Footer_content .col-md-3 span::selection,
+.Foooter_Section .Footer_content .col-md-3 span::selection,
+.Foooter_Section .Footer_content  .footer_2  ul li::selection,
+.Foooter_Section .Footer_content  .footer_2 h2::selection{
+    background-color: #cc0d39;
+    color: #fff;
+}
+
+.Foooter_Section .Footer_content .col-md-3 h3:hover,
+.Foooter_Section .Footer_content .col-md-3 p:hover,
+.Foooter_Section .Footer_content .col-md-3 span:hover,
+.Foooter_Section .Footer_content  .footer_2  ul li:hover,
+.Foooter_Section .Footer_content  .footer_2 h2:hover{
+color: #cc0d39;
+cursor: pointer;
+}
+
+.Foooter_Section .Footer_content .col-md-3 .info_card img{
+width: 60px;
+height: 60px;
+min-width: 60px;
+border-radius: 10px;
+margin-right: 15px;
+margin-top: 5%;
+}
+
+.Foooter_Section .Footer_content .col-md-3 p{
+    font-size: 18px;
+    font-weight: 600;
+    color: #000000;
+    font-family: "Rubik", 'sans-serif';
+    transition: 0.4s;
+}
+.Foooter_Section .Footer_content .col-md-3 span{
+    font-size: 14px;
+    font-weight: 400;
+    color: #393838;
+    font-family: "Rubik", 'sans-serif';
+    transition: 0.4s;
+}
+  
+/*===============*/
+
+.Foooter_Section .Footer_content  .fooot {
+width: 80%;
+}
+
+.Foooter_Section .Footer_content  .footer_2 h2{
+margin-bottom: 10%;
+font-size: 25px;
+font-weight: 500;
+font-family: "Rubik", 'sans-serif';
+transition: 0.4s;
+margin-left: 20px;
+}
+.Foooter_Section .Footer_content  .footer_2  ul{
+    list-style: none;
+margin: 0;
+padding: 0;
+}
+
+.Foooter_Section .Footer_content  .footer_2  ul li{
+    font-size: 15px;
+    line-height: 2.4;
+    font-weight: 500;
+    transition: 0.4s;
+    margin-left: 20px;
+}
+
+
+
+/*===============Footer_End==================*/
+/* start hr_footer*/
+.hr_footer{
+border: 1px solid rgba(222, 218, 218, 0.733);
+margin-bottom: 3%;
+}
+/* start hr_footer*/
+
+
+.Foooter_Section .footer_end{
+text-align: center;
+margin-bottom: 1%;
+}
+
+.Foooter_Section .footer_end .right p{
+font-size: 17px;
+font-weight: 600;
+font-family: "Open Sans", 'sans-serif';
+}
+
+.Foooter_Section .footer_end .right ::selection,
+.Foooter_Section .footer_end .left .imge_footerend span::selection{
+    background-color: #cc0d39;
+    color: #fff;
+}
+
+.Foooter_Section .footer_end .right span{
+    color: #cc0d39;
+}
+
+.Foooter_Section .footer_end .right span::selection{
+    background-color: #000;
+    color: #cc0d39;
+}
+
+
+.Foooter_Section .footer_end .left .imge_footerend span{
+    font-size: 15px;
+    font-weight: 600;
+    font-family: "Open Sans", 'sans-serif';
+}
+
+
+/***End  Style Footer */
+/*------------------------------------------------------------------------------*/
