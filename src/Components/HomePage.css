@@ -9,6 +9,11 @@
 }
 
 /*scrollbar*/
+body{
+    overflow-x: hidden;
+}
+
+
 
 /**start section homePage style*/
 
@@ -302,6 +307,7 @@ text-align: center;
     height: 100%;
     overflow: hidden;
     background-color: #fffaf3;
+    position: relative;
 }   
 .Section_Cards .HeaderText{
     display: flex;
@@ -389,11 +395,11 @@ transition: 0.5s;
 margin-right: 1%;
 }
 
+
 .Section_Cards .Cards_Card .col-md-3 .info{
     position: absolute;
     top: 300%;
     left: 6%;
-     background-color: #00000057;
      border-radius: 10px;
      transition: 0.6s;
 }
@@ -403,6 +409,7 @@ padding: 80px ;
     width: 100%;
     height: 100%;
 }
+
   
 .Section_Cards .Cards_Card .col-md-3 .info  .caption h6{
     background-color: #fff;
@@ -476,6 +483,242 @@ padding: 9px 16px;
 border-radius: 14px;
 margin-left: 10px;
 }   
+
+
+/*-------------Start style Popup-view in section cards-------------*/
+/**/
+
+.Section_Cards .popup-View {
+    position: absolute;
+    top: 13%;
+   
+}
+
+.Section_Cards .popup-View .popup-Card{
+    position: relative;
+ 
+}
+
+.Section_Cards .popup-View .popup-Card .close{
+    position: absolute;
+    left: 97%;
+    top: 4%;
+    z-index: 1222;
+    cursor: pointer;
+}
+
+
+.Section_Cards .popup-View .popup-Card .img_back{
+    position: relative;
+}
+
+
+.Section_Cards .popup-View .popup-Card img{
+    width: 500px;
+    margin-left: 55px;
+    height: 550px;
+    cursor: pointer;
+    border-radius: 10px 0 0 10px;   
+}
+.Section_Cards .popup-View .popup-Card .img_back   .top img{
+    transition: transform 0.3s ease;
+}
+.Section_Cards .popup-View .popup-Card .img_back:hover img{
+    transform: scale(0.9)
+}
+
+
+
+.Section_Cards .popup-View .img_Click{
+    position: absolute;
+    left: 15%;
+    top: 2%;
+    
+}
+
+.Section_Cards .popup-View .img_Click img{
+    width: 80px;
+    margin-left: 0;
+    height: 80px;
+    border-radius: 10px ;
+    border: 1px solid #fff;
+}
+
+
+
+.Section_Cards .popup-View  .popup-Card {
+    display: flex;
+   justify-content: center;
+   border-radius: 10px;
+}
+
+.Section_Cards .popup-View .popup-Card .info_popup{
+    width: 45%;
+    height: 93%;
+    border-radius:  0 8px 8px 0 ;
+   background-color: #fff;
+   text-align: start;
+}
+
+
+.Section_Cards .popup-View .popup-Card .info_popup h6{
+text-align: start;
+margin-left: 8%;
+margin-top: 5%;
+background-color: #000;
+border-radius: 6px;
+color: #fff;
+width: 25%;
+padding: 10px 15px;
+}
+.Section_Cards .popup-View .popup-Card .info_popup h6::selection,
+.Section_Cards .popup-View .popup-Card .info_popup h1::selection,
+.Section_Cards .popup-View .popup-Card .info_popup p::selection,
+.Section_Cards .popup-View .popup-Card .info_popup span .inf::selection,
+.Section_Cards .popup-View .popup-Card .info_price_quantity  .Quantity .info_Qun h1::selection,
+.Section_Cards .popup-View .popup-Card .info_price_quantity  .price h3::selection,
+.Section_Cards .popup-View .popup-Card .info_price_quantity  .price span::selection ,
+.Section_Cards .popup-View .popup-Card .info_price_quantity  .price del::selection,
+.Section_Cards .popup-View .popup-Card .info_price_quantity  .Quantity h3::selection,
+.Section_Cards .popup-View .popup-Card  .footer_Quantity h4::selection,
+
+.Section_Cards .popup-View .popup-Card  .footer_Quantity span::selection {
+    background-color: #cc0d39;
+    color: #fff;
+}
+
+.Section_Cards .popup-View .popup-Card .info_popup h1{
+    margin-left: 8%;
+    color: #000000;
+  font-size: 30px;
+  font-weight: 700;
+  margin-bottom: 2%;
+}
+
+.Section_Cards .popup-View .popup-Card .info_popup span{
+    margin-left: 8%;
+font-size: 14px;
+}
+.Section_Cards .popup-View .popup-Card .info_popup span .chldren{
+    color: #ecb719;
+} 
+.Section_Cards .popup-View .popup-Card .info_popup span .inf{
+    margin-left: 2%;
+}
+
+.Section_Cards .popup-View .popup-Card .info_popup p{
+    margin-left: 8%;
+    margin-bottom: 3%;
+    margin-top: 2%;
+    font-weight: 500;
+}
+
+/*start style Hr */
+.Section_Cards .popup-View .popup-Card .info_popup hr{
+width: 90%;
+border: 1px solid gray;
+}
+/*start style Hr */
+
+
+/*start stayle Price and  quantity*/
+/*start stayle Price */
+.Section_Cards .popup-View .popup-Card .info_price_quantity {
+    display: flex;
+    margin-left: 8%;
+    overflow: hidden;
+}
+
+.Section_Cards .popup-View .popup-Card .info_price_quantity  .price{
+    margin-right: 10%;
+}
+.Section_Cards .popup-View .popup-Card .info_price_quantity  .price h3{
+    font-weight: 700;
+    font-size: 30px;
+}
+.Section_Cards .popup-View .popup-Card .info_price_quantity  .price span{
+margin-left: 0;
+font-weight: 700;
+font-size: 20px;
+
+}
+.Section_Cards .popup-View .popup-Card .info_price_quantity  .price del{
+    font-weight: 300;   
+    font-size: 19px;
+    color: gray;
+}
+
+/*start stayle quantity*/
+
+.Section_Cards .popup-View .popup-Card .info_price_quantity  .Quantity .info_Qun{
+display: flex;
+margin-left:  8%;
+justify-content: space-around;
+align-items: center;
+}
+
+.Section_Cards .popup-View .popup-Card .info_price_quantity  .Quantity .info_Qun button {
+    border: none;
+    background-color: #000;
+    color: fff;
+    border-radius: 50%;
+    padding: 7px ;
+}
+
+.Section_Cards .popup-View .popup-Card .info_price_quantity  .Quantity .info_Qun button i{
+    color: #fff;
+ 
+}
+.Section_Cards .popup-View .popup-Card .info_price_quantity  .Quantity .info_Qun h1{
+    margin-right: 5%;
+    font-weight: 500;
+    padding: 2px 6px ;
+    border: 1px solid #000;
+    border-radius: 50%;
+}
+
+.Section_Cards .popup-View .popup-Card  .footer_Quantity h4  {
+font-size: 16px;
+color: rgb(15, 14, 14);
+font-weight: 500;
+
+}
+
+.Section_Cards .popup-View .popup-Card  .footer_Quantity span{
+    font-size: 18px;
+font-weight: 700;
+color: #000;
+margin-right: 1%;
+}
+
+
+.Section_Cards .popup-View .popup-Card   .footer_icon{
+    margin-left: 10%;
+    margin-bottom: 5%;
+margin-top: 2%;
+}
+
+.Section_Cards .popup-View .popup-Card   .footer_icon i{
+font-size: 20px;
+    margin-right: 3%;
+    cursor: pointer;
+    transition: .5s;
+}
+
+.Section_Cards .popup-View .popup-Card   .footer_icon i:hover{
+    color: #ecb719;
+    font-size: 23px;
+}
+
+
+
+
+
+
+
+
+/*-------------End style Popup-view in section cards-------------*/
+
 
 /*end style section3 Cards*/
 /*------------------------------------------------------------------------------*/

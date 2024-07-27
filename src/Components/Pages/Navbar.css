@@ -56,6 +56,11 @@ color: #000;
     color: gray;
 }
 
+.nav_bar_section .navbar ul li  .nav-link:hover{
+  color: rgb(240, 152, 10) ;
+    
+}
+
 .nav_bar_section form {
     margin-right: 7%;
 }

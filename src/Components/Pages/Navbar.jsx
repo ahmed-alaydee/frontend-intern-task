@@ -38,11 +38,7 @@ function Navbar() {
 </li>
  
       <li class="nav-item active">
-        <Link class="nav-link" to='/ShopPage'>Shop <i class="fa-duotone fa-solid fa-star"></i></Link>
-      </li>
-
-      <li class="nav-item active">
-        <Link class="nav-link" to="/">Blog <i class="fa-duotone fa-solid fa-star"></i></Link>
+        <Link class="nav-link" to="/ShopPage">Shop Page <i class="fa-duotone fa-solid fa-star"></i></Link>
       </li>
 
     <li class="nav-item dropdown  active">
@@ -71,7 +67,7 @@ function Navbar() {
       </li>
 
       <li class="nav-item active">
-        <Link class="nav-link " to="/</li>">Pages <i class="fa-duotone fa-solid fa-star"></i></Link>
+        <Link class="nav-link " to="/">Pages <i class="fa-duotone fa-solid fa-star"></i></Link>
       </li>
       
       <li class="nav-item active">

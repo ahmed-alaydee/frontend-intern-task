@@ -23,16 +23,70 @@ import  comp_3 from "../Components/Pages/img/img-2/comp_3.jpg"
 import  LatestPos_1 from "../Components/Pages/img/img_4/LatestPos_1.jpg"
 import  LatestPos_2 from "../Components/Pages/img/img_4/LatestPos_2.jpg"
 import  LatestPos_3 from "../Components/Pages/img/img_4/LatestPos_3.jpg"
-import logo2  from "../Components/Pages/img/logo.svg"
+import logo2  from "../Components/Pages/img/logo.svg";
+
+import lady_1  from "../Components/Pages/img/img_popup-view/lady-1.png";
+import lady_2  from "../Components/Pages/img/img_popup-view/lady-2.png";
+import lady_3  from "../Components/Pages/img/img_popup-view/lady-3.png";
 
 import footer_imge  from "../Components/Pages/img/footer-img.png"
 import SlideHome from "./SlideHome"
+import { useState } from "react"
+
 
 
 
 
 function HomePage(){
+
+
+{/**start handel Plus and mines in Quantity */}
+    const [number,setnumper] = useState(0)
+
+ const handelPlus = (e) =>{
+ 
+    setnumper(e => e + 1);
+    }
+
+
+const handelMines = (e) => {
+    setnumper(e =>  Math.max(e - 1 ,0 ));
+}
+
+{/** end handel Plus and mines in Quantity */}
+
+
+
+{/**starthandelonchangeimg */}
+
+const [image , setimage]=useState()
+
+const onchangeimg = (newimg) =>{
+    setimage(newimg)
+
+}
+{/**start  handelonchangeimg*/}
+
+
+{/**start   hiddinpopupView*/}
+const [popupVisible, setPopupVisible] = useState(true);
+const  hiddinpopupView = ()=>{
+    setPopupVisible(false)
+}
+{/**end   hiddinpopupView*/}
+
+
+{/**start  Showpopupview*/}
+const Showpopupview = ()=>{
+    setPopupVisible(true)
+}
+
+{/**end  Showpopupview*/}
+
+
+    
 return(
+   
 <>
 {/**start section homePage*/}
 <div className=" section_home_head ">
@@ -149,6 +203,8 @@ return(
   
 </div>
 
+{/**Start section card in section cards*/}
+
 <div className="Cards_Card">
     <div className="row shufel_images">
 
@@ -161,7 +217,7 @@ return(
         <i class="fa-regular fa-heart"></i>
         <i class="fa-solid fa-basket-shopping"></i>
         <div className="buttonn">
-        <Link to="/" className="btn btn-outline-danger ">QUICK VIEW </Link>
+        <Link to="/" className="btn btn-outline-danger " onClick={Showpopupview}>QUICK VIEW </Link>
         </div>
                 </div>
             </div>
@@ -179,7 +235,7 @@ return(
         <i class="fa-regular fa-heart"></i>
         <i class="fa-solid fa-basket-shopping"></i>
         <div className="buttonn">
-        <Link to="/" className="btn btn-outline-danger ">QUICK VIEW </Link>
+        <Link to="/" className="btn btn-outline-danger " onClick={Showpopupview}>QUICK VIEW </Link>
         </div>
                 </div>
             </div>
@@ -197,7 +253,7 @@ return(
         <i class="fa-regular fa-heart"></i>
         <i class="fa-solid fa-basket-shopping"></i>
         <div className="buttonn">
-        <Link to="/" className="btn btn-outline-danger ">QUICK VIEW </Link>
+        <Link to="/" className="btn btn-outline-danger " onClick={Showpopupview}>QUICK VIEW </Link>
         </div>
                 </div>
             </div>
@@ -215,7 +271,7 @@ return(
         <i class="fa-regular fa-heart"></i>
         <i class="fa-solid fa-basket-shopping"></i>
         <div className="buttonn">
-        <Link to="/" className="btn btn-outline-danger ">QUICK VIEW </Link>
+        <Link to="/" className="btn btn-outline-danger " onClick={Showpopupview}>QUICK VIEW </Link>
         </div>
                 </div>
             </div>
@@ -233,7 +289,7 @@ return(
         <i class="fa-regular fa-heart"></i>
         <i class="fa-solid fa-basket-shopping"></i>
         <div className="buttonn">
-        <Link to="/" className="btn btn-outline-danger ">QUICK VIEW </Link>
+        <Link to="/" className="btn btn-outline-danger "onClick={Showpopupview}>QUICK VIEW </Link>
         </div>
                 </div>
             </div>
@@ -251,7 +307,7 @@ return(
         <i class="fa-regular fa-heart"></i>
         <i class="fa-solid fa-basket-shopping"></i>
         <div className="buttonn">
-        <Link to="/" className="btn btn-outline-danger ">QUICK VIEW </Link>
+        <Link to="/" className="btn btn-outline-danger " onClick={Showpopupview}>QUICK VIEW </Link>
         </div>
                 </div>
             </div>
@@ -269,7 +325,7 @@ return(
         <i class="fa-regular fa-heart"></i>
         <i class="fa-solid fa-basket-shopping"></i>
         <div className="buttonn">
-        <Link to="/" className="btn btn-outline-danger ">QUICK VIEW </Link>
+        <Link to="/" className="btn btn-outline-danger " onClick={Showpopupview}>QUICK VIEW </Link>
         </div>
                 </div>
             </div>
@@ -287,7 +343,7 @@ return(
         <i class="fa-regular fa-heart"></i>
         <i class="fa-solid fa-basket-shopping"></i>
         <div className="buttonn">
-        <Link to="/" className="btn btn-outline-danger ">QUICK VIEW </Link>
+        <Link to="/" className="btn btn-outline-danger " onClick={Showpopupview}>QUICK VIEW </Link>
         </div>
                 </div>
             </div>
@@ -297,7 +353,84 @@ return(
              </div>
         </div>
     </div>
+
+
+{/**Start Popup-view in section cards*/}
+
+{popupVisible && (
+        <div className="popup-View container text-center">
+          <div className="popup-Card">
+            <a className="close"><i className="fas fa-times close-btn" onClick={hiddinpopupView}></i></a>
+            <div className="row">
+              <div className="popup-card_img col-md-6">
+                <div className="img_back">
+                  <img className="top" src={image} alt="" />
+                </div>
+                <div className="img_Click">
+                  <img onClick={() => onchangeimg(lady_1)} src={lady_1} alt="" />
+                  <br />
+                  <img onClick={() => onchangeimg(lady_2)} src={lady_2} alt="" />
+                  <br />
+                  <img onClick={() => onchangeimg(lady_3)} src={lady_3} alt="" />
+                </div>
+              </div>
+
+              <div className="info_popup col-md-6">
+                <h6>SALE 20% OFF</h6>
+                <h1>Cozy Knit Cardigan Sweater</h1>
+                <span>
+                  <i className="fa-solid fa-star chldren"></i>
+                  <i className="fa-solid fa-star chldren"></i>
+                  <i className="fa-solid fa-star chldren"></i>
+                  <i className="fa-regular fa-star"></i>
+                  <i className="fa-regular fa-star"></i>
+                  <span className="inf"> 4.7 Rating (5 customer reviews)</span>
+                </span>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Laborum vero ea maxime delectus minima!</p>
+
+                <div className="info_price_quantity">
+                  <div className="price">
+                    <h3>Price</h3>
+                    <span>$125.75 <del>$132.17</del></span>
+                  </div>
+
+                  <div className="Quantity">
+                    <h3>Quantity</h3>
+                    <div className="info_Qun">
+                      <button className="btn buuttt" onClick={handelMines}><i className="fa-solid fa-minus"></i></button>
+                      <h1>{number}</h1>
+                      <button className="btn buuttt" onClick={handelPlus}><i className="fa-solid fa-plus"></i></button>
+                    </div>
+                  </div>
+                </div>
+                <fiv className="button d-flex justify-content-center mt-3 ml-2">
+                    <Link className="btn btn-outline-dark buutonn mr-2" to="/shopcart">Add to cart</Link>
+                    <Link  className="btn btn-outline-dark buutonn">Add to Wishlist</Link>
+                </fiv>
+                <hr />
+                <div className="footer_Quantity">
+                  <h4><span>SKU: </span> PRT584E63A</h4>
+                  <h4><span>Category: </span> Dresses, Jeans, Swimwear, Summer, Clothing</h4>
+                  <h4><span>Tags: </span> Casual Athletic, Workwear, Accessories</h4>
+                </div>
+             <div className="footer_icon">
+                  <i className="fa-brands fa-facebook"></i>
+                  <i className="fa-brands fa-twitter"></i>
+                  <i className="fa-brands fa-youtube"></i>
+                  <i className="fa-brands fa-linkedin"></i>
+                  <i className="fa-brands fa-instagram"></i>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      )}
+
+
+{/**End Popup-view in section cards*/}
+
 </div>
+{/**End section card in section cards*/}
 
 </div>
 {/**end section3 Cardsr*/}
@@ -700,6 +833,16 @@ Dress to Impress: Elevate Your Everyday Style
 </div>
 {/**End Footer */}
 {/**====================================================================*/}
+
+
+
+
+
+
+
+
+
+
 
 </>
 )

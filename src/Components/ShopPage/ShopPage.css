@@ -450,8 +450,7 @@ margin-right: 10px;
     
     
     
-    
-    
+
   
  .Section_2 .container-fluid  .Section_Cards  .Cards_Card  .icon_ic h6{
     background-color: #fff;
@@ -463,12 +462,7 @@ margin-right: 10px;
     /*end style section3 Cards*/
 
 
-
-
 /*End Section Right Card*/
-
-
-
 
 /*------------------------------------------------------------------------------*/
 /*------------------------------------------------------------------------------*/
@@ -537,6 +531,7 @@ margin-bottom: 10px;
     font-weight: 500;
     font-family: "Rubik", 'sans-serif';
 }
+
 .Foooter_Section .Footer_content .col-md-3 h3::selection,
 .Foooter_Section .Footer_content .col-md-3 p::selection,
 .Foooter_Section .Footer_content .col-md-3 span::selection,
