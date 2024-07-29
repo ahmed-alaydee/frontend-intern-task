@@ -1,6 +1,6 @@
 import React from 'react'
 import SimpleSlider from "./Slider"
-import "../Components/HomePagee.css"
+import "../Components/SlidHome.css"
 function SlideHome() {
   return (
     <section className="home">

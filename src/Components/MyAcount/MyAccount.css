@@ -1,0 +1,365 @@
+
+/*Start scrollbar*/
+
+* {
+    scrollbar-color: rgba(223, 223, 223, 0.9) rgba(255, 255, 255, 0);
+    scrollbar-width: thin;
+}
+
+/*End scrollbar*/
+body{
+    background-color: rgb(250, 244, 222);
+}
+
+
+
+/*-=------------------------------------------------------------*/
+/*Start Style  Section_1 BakGround*/
+
+ .Section_11{
+    height:80vh;
+    width: 100%;
+    overflow: hidden;
+    position: relative;
+    margin-bottom: 0;
+    background-color: rgb(244, 243, 236);
+}
+
+
+
+.Section_11  .Bacground{
+    margin-bottom: 0;
+    width: 100%;
+    height: 60%;
+    margin-top: 7%;
+    background-image: url(../Pages//img//img_5/bg1.jpg);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-repeat: no-repeat;
+    position: relative;
+    background-size: cover;
+}
+
+
+ .Section_11  .Bacground::after{
+    content: "";
+    background-color: #00000065;
+    width: 100%;
+    height: 100%;
+      position: absolute;
+}
+
+.Section_11 .Bacground  .content{
+ position: absolute;
+ top: 26%;
+ left: 40%;
+ z-index: 1222;
+}
+
+.Section_11 .Bacground  .content h2{
+    color: #fff;
+    font-size: 40px;
+    font-weight: 600;
+}
+ 
+ .Section_11 .Bacground  .content p{
+    text-align: center;
+    color: #fff;
+    font-size: 18px;
+    font-weight: 500;
+
+}
+
+ .Section_11 .Bacground  .content p::selection,
+.Section_11 .Bacground  .content h2::selection,
+ .Section_11 .Bacground  .content span::selection{
+background-color: #cc0d39;
+color: #fff;
+}
+
+
+/*-=------------------------------------------------------------*/
+/*End  Style  Section_1 BakGround*/
+/*-=------------------------------------------------------------*/
+
+    /**start style section card left */
+
+.Sec_2 .row{
+    height: 100%;
+margin-top: 0;
+    background-color: rgb(244, 243, 236);
+    position: relative;
+}
+
+.Sec_2 .caard {
+    background-color: #fff;
+    height: 120vh;
+
+border-radius: 15px;
+position: absolute;
+top: -30%;
+left: 2%;
+   
+}
+
+@media (max-width:890px) {
+   
+
+.Sec_2 .caard {
+    display: none;  
+ 
+   
+} 
+
+}
+
+
+.Sec_2 .caard .topCard{
+    margin-top: 5%;
+    text-align: center;
+}
+
+.Sec_2 .caard .topCard img{
+height: 100px;
+width: 100px;
+border-radius: 50%;
+padding: 5px;
+margin-bottom: 2%;
+border: 1px solid rgb(181, 176, 176);
+}
+
+.Sec_2 .caard .topCard h5{
+font-weight: 600;
+}
+.Sec_2 .caard .topCard  span{
+font-size: 15px;
+
+}
+
+.Sec_2 .caard .topCard  span::selection,
+.Sec_2 .caard .topCard h5::selection    {
+    background-color:#cc0d39;
+    color: #fff;
+}
+
+
+
+
+.Sec_2 .caard .secoundCrad {
+    margin-top: 8%;
+}
+.Sec_2 .caard .secoundCrad ul{
+    list-style: none;
+}
+
+.Sec_2 .caard .secoundCrad ul li{
+    padding-top: 15px;
+}
+.Sec_2 .caard .secoundCrad ul li .Link{
+    margin-top: 2%;
+    color: #000;
+    font-size: 16px;
+    font-weight: 500;
+    transition: 0.4s;
+}
+.Sec_2 .caard .secoundCrad ul li .Link:hover,
+.Sec_2 .caard .secoundCrad ul li .Linkbg:hover    {
+    text-decoration: none;
+    color: #cc0d39;
+}
+.Sec_2 .caard .secoundCrad ul li .Linkbg{
+    background-color: rgba(241, 235, 227, 0.76);
+margin-right: 10px;
+width: 100%;
+color: #000;
+padding: 5px 30px;
+border-radius: 10px;
+
+}
+
+/*-=------------------------------------------------------------*/
+    /**End style section card left */
+
+
+/*-=------------------------------------------------------------*/
+/*strat Section Right */
+
+
+.Sec_2 .row .sectRight{
+    border-top: 1px solid gainsboro;
+    border-left: 1px solid gainsboro;
+    margin-left: 28%;
+    border-right: 1px solid gainsboro;
+    margin-top: 0;
+    border-radius: 15px;
+}
+
+@media (max-width:450px) {
+   
+
+    .Sec_2 .caard {
+        display: none;  
+       
+    } 
+
+
+    .Sec_2 .row .sectRight{
+        border-top: 1px solid gainsboro;
+        border-left: 1px solid gainsboro;
+        border-right: 1px solid gainsboro;
+        margin-left:0%;
+        margin-top: 0;
+        border-radius: 15px;
+    }
+    
+    }
+    @media (max-width:680px) {
+   
+
+        .Sec_2 .caard {
+            display: none;  
+           
+        } 
+    
+        .Sec_2 .row .sectRight{
+            border-top: 1px solid gainsboro;
+            border-left: 1px solid gainsboro;
+            margin-left:0%;
+            margin-top: 0;
+            border-radius: 15px;
+        }
+        
+        }
+
+        @media (max-width:774px) {
+   
+
+            .Sec_2 .caard {
+                display: none;  
+               
+            } 
+        
+        
+            .Sec_2 .row .sectRight{
+                border-top: 1px solid gainsboro;
+                border-left: 1px solid gainsboro;
+                margin-left:0%;
+                margin-top: 0;
+                border-radius: 15px;
+            }
+            
+            }
+
+            @media (max-width:450px) {
+   
+
+                .Sec_2 .caard {
+                    display: none;  
+                   
+                } 
+            
+            
+                .Sec_2 .row .sectRight{
+                    border-top: 1px solid gainsboro;
+                    border-left: 1px solid gainsboro;
+                    margin-left:0%;
+                    margin-top: 0;
+                    border-radius: 15px;
+                }
+                
+                }
+
+.Sec_2 .row .sectRight .contanir_right{
+    margin-top: 5%;
+    height: 100%;
+}
+
+.Sec_2 .row .sectRight .contanir_right h3{
+    font-size: 18px;
+    font-weight: 500;
+    margin-left: 5%;
+}
+.Sec_2 .row .sectRight .contanir_right span{
+    border-bottom: 1px solid #0000;
+}
+.Sec_2 .row .sectRight .contanir_right .link{
+    color: #cc0d39;
+    border-bottom: 1px saddlebrown solid;
+}
+.Sec_2 .row .sectRight .contanir_right p{
+    width: 70%;
+    margin-left: 5%;
+ 
+  
+}
+
+.Sec_2 .row .sectRight .contanir_right .btn{
+    color: #000;
+    text-align: start;
+}
+.Sec_2 .row .sectRight .contanir_right .btn:hover{
+    border-bottom: none;
+}
+
+.Sec_2 .row .sectRight .contanir_right .towCard .row {
+    margin-top: 2%;
+    margin-right: 1%;
+}
+.Sec_2 .row .sectRight .contanir_right .towCard .row .card_1{
+background-color: #fff;
+width: 80%;
+height: 150px;
+border-radius: 20px;
+text-align: center;
+transition: 0.6s;
+}
+
+.Sec_2 .row .sectRight .contanir_right .towCard .row .card_1:hover{
+    background-color: #cc0d39;
+    color: #fff;
+}
+
+.Sec_2 .row .sectRight .contanir_right .towCard .row .card_1  svg{
+  margin-top: 5%;
+  margin-bottom: 1%;
+  cursor: pointer;
+}
+.Sec_2 .row .sectRight .contanir_right .towCard .row .card_1  svg:hover{
+    color: #cc0d39;
+}
+
+.Sec_2 .row .sectRight .contanir_right .towCard .row .card_1  p{
+    margin-left: 14%;
+    margin-top: 2%;
+    font-size: 15px;
+    font-weight: 500;
+}
+.Sec_2 .row .sectRight .contanir_right .towCard .row .card_1 h2{
+    font-size: 35px;
+    font-weight: 600;
+}
+
+
+.Sec_2 .row .sectRight .contanir_right .center_Card {
+    margin-top: 4%;
+    background-color: rgb(244, 243, 236);
+}
+.Sec_2 .row .sectRight .contanir_right .center_Card .img_1{
+    width: 500px;
+    height: 300px;
+
+}
+.Sec_2 .row .sectRight .contanir_right .center_Card .img_2{
+    width: 300px;
+    height: 350px;
+margin-left: 5%;
+}
+
+
+/*End Section Right */
+/*-=------------------------------------------------------------*/
+
+
+/*============================*/
+/* End  style section_2*/
+

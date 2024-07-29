@@ -16,7 +16,7 @@ function Navbar() {
 
 <nav class="navbar navbar-expand-lg navbar-light  ">
   <Link class="navbar-brand logo_logo" to="/" ><img src={logo} alt="logo" /></Link>
-  <button class="navbar-toggler  " type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+  <button class="navbar-toggler bg-danger   " type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
     <span class="navbar-toggler-icon"></span>
   </button>
 
@@ -31,8 +31,8 @@ function Navbar() {
 <div class="dropdown-menu menu_meun_2">
   <div className='maenu_photo'>
   <Link  to='/' class="dropdown-item doop " ><img src={home_1} alt="" /></Link>
-  <Link to='/homepage1' class="dropdown-item" ><img src={home_2} alt="" /></Link>
-  <Link to='/homepage3' class="dropdown-item" ><img src={home_3} alt="" /></Link>
+  <Link to='/' class="dropdown-item" ><img src={home_2} alt="" /></Link>
+  <Link to='/' class="dropdown-item" ><img src={home_3} alt="" /></Link>
   </div>
 </div>
 </li>
@@ -67,11 +67,11 @@ function Navbar() {
       </li>
 
       <li class="nav-item active">
-        <Link class="nav-link " to="/">Pages <i class="fa-duotone fa-solid fa-star"></i></Link>
+        <Link class="nav-link " to="/Checkout">Checkout <i class="fa-duotone fa-solid fa-star"></i></Link>
       </li>
       
       <li class="nav-item active">
-        <Link class="nav-link ">My Account <span>NEW</span> <i class="fa-duotone fa-solid fa-star"></i></Link>
+        <Link class="nav-link " to="/MyAccount"> My Account <span>NEW</span> <i class="fa-duotone fa-solid fa-star"></i></Link>
       </li>
     </ul>
     <form class="form-inline my-2 my-lg-0">
@@ -80,8 +80,14 @@ function Navbar() {
       <i class="fa-regular fa-heart"></i>
       <i class="fa fa-cart-shopping"></i>
       </div>
- 
+      <div className='button'>
+      </div>
+
     </form>
+    <div className='button'>
+    <Link to="/UserAcount" className='btn btn-outline-danger '>Sign in</Link>
+    </div>
+  
   </div>
 
 </nav>

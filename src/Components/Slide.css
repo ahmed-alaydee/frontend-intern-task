@@ -12,6 +12,13 @@ margin-bottom: 60px;
 
 .contanire_btn .btn{
  position: absolute;
-bottom: 25%;
+bottom: 20%;
 left: 40%;
+transition: 0.5s;
+}
+
+.contanire_btn .btn:hover{
+    background-color: #000;
+    color: #fff;
+    border: none;
 }

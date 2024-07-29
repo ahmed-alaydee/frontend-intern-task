@@ -260,7 +260,7 @@ margin-bottom: 10%;
     height: 100%;
     width: 100%;
     overflow: hidden;
-    background-color: #Fee89d;
+    background-color: #fcfbf6;
     border-radius: 8px;
 }
 .Seaction_2  .Card_banner  {
@@ -288,10 +288,9 @@ margin-bottom: 20px;
 /**slider Right style*/
 
 .slider_right{
-    background-color: #Fee89d;
+    background-color: #fcfbf6;
     border-radius: 20px;
-    margin-top: 20px;
-  padding: 5px;
+  padding: 10px;
 }
 
 .slider_right h3{
@@ -337,7 +336,7 @@ background-color: #FEEB9D;
 }
 
 .Section_Cards .HeaderText .List ul li{
-    margin-right: 20px;
+    margin-right: 1%;
     cursor: pointer;
     font-size: 17px;
     font-weight: 600;
@@ -378,6 +377,8 @@ padding: 8px ;
     color: #000;
 }
 
+
+
 .Section_Cards .Cards_Card img{
 width: 300px;
 height: 400px;
@@ -400,6 +401,7 @@ margin-right: 1%;
     position: absolute;
     top: 300%;
     left: 6%;
+    text-align: center;
      border-radius: 10px;
      transition: 0.6s;
 }
@@ -443,13 +445,13 @@ cursor: pointer;
 
 
 .Section_Cards .Cards_Card .footer_content{
- margin-left: 3%;
- margin-bottom: 10%;
+ margin-left: 4%;
+ margin-bottom: 12%;
 }
 
 
 .Section_Cards .Cards_Card .footer_content  h3{
-    font-size: 25px;
+    font-size: 23px;
     transition: 0.5s;
     font-weight: 700;
 }
@@ -459,10 +461,10 @@ cursor: pointer;
 }
 
 .Section_Cards .Cards_Card .footer_content span{
-    position: absolute;
-    left:84%;
-    bottom: 8%;
+  margin-left: 75%;
     font-weight: 700;
+ position: absolute;
+ bottom: 10%;
 }
 @media (max-width:440) {
     .Section_Cards .Cards_Card .footer_content span{
@@ -542,6 +544,7 @@ margin-left: 10px;
     height: 80px;
     border-radius: 10px ;
     border: 1px solid #fff;
+
 }
 
 
@@ -622,6 +625,8 @@ border: 1px solid gray;
 
 
 /*start stayle Price and  quantity*/
+
+
 /*start stayle Price */
 .Section_Cards .popup-View .popup-Card .info_price_quantity {
     display: flex;
@@ -712,11 +717,6 @@ font-size: 20px;
 
 
 
-
-
-
-
-
 /*-------------End style Popup-view in section cards-------------*/
 
 
@@ -763,13 +763,13 @@ text-transform: capitalize;
 }
 
 .Section_Background .back_1 .backkk h2{
-    font-size: 35px;
+    font-size: 50px;
     font-weight:700;
     text-transform: capitalize;
 }
 
 .Section_Background .back_1 .backkk span{
-    font-size: 70px;
+    font-size: 80px;
     text-transform: capitalize;
     font-weight: 600;
 }
@@ -788,7 +788,7 @@ color: #fff;
 
 
 .Section_Background .back_2{
-    height: 84.5vh;
+    height: 93vh;
     background-image: url(../Components//Pages//img/product2.png);
     background-position: center;
     background-repeat: no-repeat;
@@ -844,15 +844,18 @@ width: 100%;
 height: 100%;
 overflow: hidden;
 margin-top: 8%;
-margin-bottom: 7%;
+margin-bottom: 1%;
 background-color: #f3ebd2c6;
+position: relative;
 }  
 
 .section_Checked .img_img img{
     transition: 0.4s;
-margin-left: 5%;
+margin-left: 2%;
 border-radius: 50% 50% 0 0 ;
 height: 500px;
+width: 300px;
+margin-top: 10%;
 width: 400px;
 }
 
@@ -865,10 +868,19 @@ width: 400px;
 }
 
 
+.section_Checked  .text_contet img{
+    width: 150px;
+    height: 150px;
+    border-radius: 50%;
+    position: absolute;
+    right: 0px;
+    top: 6%;
+}
+
 .section_Checked  .text_contet{
     text-align: start;
     margin-left: 10%;
-    margin-top: 7%;
+    margin-top: 10%;
 font-weight: 800;
 color: #000000;
 }
@@ -880,8 +892,8 @@ color: #000000;
 
 
 .section_Checked .container_img img{
-    width: 220px;
-    height: 240px;
+    width: 200px;
+    height: 220px;
     margin-left: 20%;
     margin-top: 14%;
     border-radius: 20px;
@@ -909,13 +921,20 @@ transform: scale(1.1);
     font-weight: 500;
 }
 
+.section_Checked .container_img .text_img h6::selection,
+.section_Checked .container_img .text_img del::selection {
+    background-color: #cc0d39;
+    color: #fff;
+}
+
 .section_Checked .container_img .text_img h6{
-    font-size: 20px;
+    font-size: 18px;
     font-weight: 700;
+    margin-right: 10%;
 }
 
 .section_Checked .container_img .text_img del{
-    font-size: 18px;
+    font-size: 15px;
     font-weight: 600;
 }
 /**----------------- end  section5 Photo------------------------*/
@@ -927,14 +946,18 @@ transform: scale(1.1);
 .Section_6 {
     overflow: hidden;
     background-color: #fffaf3;
-    margin-bottom: 10%;
+    margin-bottom: 5%;
 }
 
 .Section_6 h1{
-    margin-top: 3%;
-    margin-left: 10%;
-font-size: 45px;
-font-weight: 600;
+    margin-top: 5%;
+    margin-left: 5%;
+font-size: 50px;
+font-weight: 700;
+}
+.Section_6 h1::selection{
+    background-color: #cc0d39;
+    color: #fff;
 }
 
 
@@ -954,7 +977,7 @@ font-weight: 600;
     background-size: cover;
     border-radius: 10px;
     width: 100%;
-    height: 80vh;
+    height: 84vh;
     margin-top:5%;  
 }
 
@@ -993,7 +1016,7 @@ font-weight: 600;
     background-repeat: no-repeat;
     background-size: cover;
     width: 100%;
-    height: 80vh;
+    height: 85vh;
     border-radius: 10px;
     margin-top:5%;
 }
@@ -1033,6 +1056,7 @@ font-weight:700;
 
 /**----------------- end  section6 Photoback------------------------*/
 /*------------------------------------------------------------------------------*/
+
 
 /*------------------------------------------------------------------------------*/
 /***start style  section7 img*/
@@ -1224,8 +1248,8 @@ color: #fff;
 .col-md-7 .image_and_info .im_g img{
     width: 250px;
     height: 250px;
-    margin-top: 11%;
-    margin-left: 23%;
+    margin-top: 13%;
+    margin-left: 27%;
     border-radius: 20px 0 0 20px;
     transition: 0.5s;
 }
@@ -1241,6 +1265,7 @@ color: #fff;
    margin-top: 5%;
    background-color: #fff;
    height: 45vh;
+   margin-left: 3%;
    border-radius: 0 20px 20px 0;
    margin-bottom: 10%;
 }
@@ -1271,8 +1296,7 @@ border-radius: 10px;
 /*start hr-----------------*/
 hr{
     border: 1px solid #000;
-    margin-top: 6%;
-    margin-bottom: 6%;
+    overflow: hidden;
 }
 /* End hr-----------------*/
 /*------------------------------------------------------------------------------*/

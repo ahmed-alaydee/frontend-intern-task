@@ -76,8 +76,6 @@ function ShopPage() {
 <div className="card flex justify-content-center">
             <Slider value={value} onChange={(e) => setValue(e.value)} className="w-14rem" range />
             <div className="circle">
-        <div className="circle_1"></div>
-        <div className="circle_2"></div>
         </div>
         </div>
         <div className="maiandmaxprice">
@@ -118,10 +116,9 @@ function ShopPage() {
           </div>
         </div>
 </div>
+<hr />
 
 </div>
-
-
 
 </div>
  {/** end slider left*/}
@@ -132,7 +129,7 @@ function ShopPage() {
 <div className="row  shufel_images Cards_Card">
 
 
-<div className="col-md-3 Cards_Card">
+<div className="col-md-4  Cards_Card2">
             <img className="Dresses" src={ge2} alt="" />
 
             <div className="info">
@@ -147,12 +144,13 @@ function ShopPage() {
             </div>
              <div className="footer_content">
              <h3>Cozy Knit Cardigan <br/> Sweater</h3>
-             <span>$80</span>
+             <p>$80</p>
              </div>
         </div>
+        
+<div className="col-md-4  Cards_Card2">
+            <img className="Dresses" src={pic5} alt="" />
 
-        <div className="col-md-3 ">
-            <img className="Dresses" src={pic8} alt="" />
             <div className="info">
                 <div className="caption">
                 <h6>GET 20% OFF</h6>
@@ -163,14 +161,15 @@ function ShopPage() {
         </div>
                 </div>
             </div>
-            <div className="footer_content">
+             <div className="footer_content">
              <h3>Cozy Knit Cardigan <br/> Sweater</h3>
-             <span>$80</span>
+             <p>$80</p>
              </div>
-             </div>
+        </div>
+        
+<div className="col-md-4  Cards_Card2">
+            <img className="Dresses" src={pic9} alt="" />
 
-        <div className="col-md-3">
-            <img className="Tops" src={banner} alt="" />
             <div className="info">
                 <div className="caption">
                 <h6>GET 20% OFF</h6>
@@ -181,14 +180,15 @@ function ShopPage() {
         </div>
                 </div>
             </div>
-            <div className="footer_content">
+             <div className="footer_content">
              <h3>Cozy Knit Cardigan <br/> Sweater</h3>
-             <span>$80</span>
+             <p>$80</p>
              </div>
         </div>
+        
+<div className="col-md-4  Cards_Card2">
+            <img className="Dresses" src={pic6} alt="" />
 
-        <div className="col-md-3">
-            <img className="Tops" src={pic5} alt="" />
             <div className="info">
                 <div className="caption">
                 <h6>GET 20% OFF</h6>
@@ -199,14 +199,15 @@ function ShopPage() {
         </div>
                 </div>
             </div>
-            <div className="footer_content">
+             <div className="footer_content">
              <h3>Cozy Knit Cardigan <br/> Sweater</h3>
-             <span>$80</span>
+             <p>$80</p>
              </div>
         </div>
+        
+<div className="col-md-4  Cards_Card2">
+            <img className="Dresses" src={pic7} alt="" />
 
-        <div className="col-md-3">
-            <img className="Outerwear" src={pic6} alt="Outerwear" />
             <div className="info">
                 <div className="caption">
                 <h6>GET 20% OFF</h6>
@@ -217,14 +218,15 @@ function ShopPage() {
         </div>
                 </div>
             </div>
-            <div className="footer_content">
+             <div className="footer_content">
              <h3>Cozy Knit Cardigan <br/> Sweater</h3>
-             <span>$80</span>
+             <p>$80</p>
              </div>
         </div>
+        
+<div className="col-md-4  Cards_Card2">
+            <img className="Dresses" src={pic5} alt="" />
 
-        <div className="col-md-3">
-            <img className="Outerwear" src={pic7} alt="" />
             <div className="info">
                 <div className="caption">
                 <h6>GET 20% OFF</h6>
@@ -235,47 +237,16 @@ function ShopPage() {
         </div>
                 </div>
             </div>
-            <div className="footer_content">
+             <div className="footer_content">
              <h3>Cozy Knit Cardigan <br/> Sweater</h3>
-             <span>$80</span>
+             <p>$80</p>
              </div>
         </div>
+        
 
-        <div className="col-md-3">
-            <img className="Jacket" src={pic9} alt="" />
-            <div className="info">
-                <div className="caption">
-                <h6>GET 20% OFF</h6>
-        <i class="fa-regular fa-heart"></i>
-        <i class="fa-solid fa-basket-shopping"></i>
-        <div className="buttonn">
-        <Link to="/" className="btn btn-outline-danger ">QUICK VIEW </Link>
-        </div>
-                </div>
-            </div>
-            <div className="footer_content">
-             <h3>Cozy Knit Cardigan <br/> Sweater</h3>
-             <span>$80</span>
-             </div>
-        </div>
+    
 
-        <div className="col-md-3">
-            <img className="Jacket" src={bannermed} alt="" />
-            <div className="info">
-                <div className="caption">
-                <h6>GET 20% OFF</h6>
-        <i class="fa-regular fa-heart"></i>
-        <i class="fa-solid fa-basket-shopping"></i>
-        <div className="buttonn">
-        <Link to="/" className="btn btn-outline-danger ">QUICK VIEW </Link>
-        </div>
-                </div>
-            </div>
-            <div className="footer_content">
-             <h3>Cozy Knit Cardigan <br/> Sweater</h3>
-             <span>$80</span>
-             </div>
-        </div>
+ 
         
 </div>
 

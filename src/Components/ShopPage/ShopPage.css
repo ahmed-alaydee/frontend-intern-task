@@ -85,8 +85,10 @@ color: #fff;
 /*start Section left_content*/
 
 .Section_2{
-    background-color: #fbf8f3; 
+    background-color: #fcf7ee; 
     height: 100vh;
+
+    border-radius: 15px;
 
 } 
   .Section_2 .container-fluid .Slider_left{
@@ -148,44 +150,6 @@ margin-top: 3%;
     margin-left: 4%;
 }
 
-.Section_2 .container-fluid .Slider_left .Price_left_slider .card .circle{
-    display: flex;
-    justify-content: space-between;
-}
-
-
-.Section_2 .container-fluid .Slider_left .Price_left_slider .card .circle .circle_1{
-    width: 10px;
-    height: 10px;
-    background-color: #469ae3;
-    border-radius: 50%;
-    margin-left: 10%;
-    border: 2px solid #0d0d0d;
-    padding: 10px;
-    cursor: pointer;
-    transition: 0.5s;
-}
-.Section_2 .container-fluid .Slider_left .Price_left_slider .card .circle .circle_1:HOVER{
-    background-color:  #0d0d0d;
-    border: 2px solid #469ae3;
-}
-
-
-.Section_2 .container-fluid .Slider_left .Price_left_slider .card .circle .circle_2{
-    width: 10px;
-    height: 10px;
-    background-color: #004cff;
-    border-radius: 50%;
-    margin-left: 10%;
-    margin-right: 10%;
-    cursor: pointer;
-    border: 2px solid #0d0d0d;
-    padding: 10px;
-}  
-.Section_2 .container-fluid .Slider_left .Price_left_slider .card .circle .circle_2:hover{
-    background-color:  #0d0d0d;
-    border: 2px solid #469ae3
-}
 
 
 .Section_2 .container-fluid .Slider_left .Price_left_slider   .maiandmaxprice{
@@ -304,7 +268,7 @@ margin-top: 3%;
 }
 
 .Section_2 .container-fluid .Slider_left   .Size_left_slider  h1{
-    font-size: 20px;
+    font-size: 23px;
     margin-left: 5%;
     font-weight: 600;
     margin-bottom: 5%;
@@ -314,6 +278,7 @@ margin-top: 3%;
 transition: 0.5s;
     border: 1px solid #000;
 padding: 4px;
+font-size: 15px;
 margin-right: 10px;
     color: #000;
     border-radius: 50%;
@@ -334,43 +299,45 @@ margin-right: 10px;
 /*start Section Right Card*/
 
 
-
- .Section_2 .container-fluid .row  .Section_Cards .Cards_Card img{
-    width: 230px;
-    height: 350px;
+.Section_2 .container-fluid .row  .Section_Cards .Cards_Card2{
+    margin-top: 5%;
+}
+ .Section_2 .container-fluid .row  .Section_Cards .Cards_Card2 img{
+    width: 220px;
+    height: 295px;
     border-radius: 20px;
     margin-bottom: 10%;
     transition: 0.5s;
     }
     
    
- .Section_2 .container-fluid .Section_Cards .Cards_Card .col-md-3 {
+ .Section_2 .container-fluid .Section_Cards .Cards_Card .col-md-4 {
         position: relative;
         transition: 0.5s;
     }
   
- .Section_2 .container-fluid  .Section_Cards .Cards_Card .col-md-3:hover .info{
-        top: 11%;
+ .Section_2 .container-fluid  .Section_Cards .Cards_Card .col-md-4:hover .info{
+        top:10%;
     margin-right: 1%;
+    transition:0.4s;
     }
     
 
-    .Section_2 .container-fluid .Section_Cards .Cards_Card .col-md-3 .info{
+.Section_Cards  .Cards_Card .col-md-4 .info{
         position: absolute;
-        top: 350%;
-   
-        left: 8%;
-        width: 220px;
+        right:10%;
+        width:300px;
         height: 340px;
-         background-color: #00000057;
          border-radius: 10px;
          transition: 0.6s;
+       transition:0.4s;
+       bottom: 2%;
       
     }
       
     
- .Section_2 .container-fluid 
- .Section_2 .container-fluid  .Section_Cards .Cards_Card .col-md-3 .info  .caption{
+ 
+ .Section_2 .container-fluid  .Section_Cards .Cards_Card .col-md-4 .info  .caption{
     padding: 80px ;
         width: 100%;
         height: 100%;
@@ -378,22 +345,23 @@ margin-right: 10px;
     }
       
     
- .Section_2 .container-fluid  .Section_Cards .Cards_Card .col-md-3 .info  .caption h6{
+ .Section_2 .container-fluid  .Section_Cards .Cards_Card .col-md-4 .info  .caption h6{
         background-color: #fff;
         color: #000;
         border-radius: 8px;
         padding: 5px 12px;
+        margin-right: 10%;
         cursor: pointer;
         transition: 0.5s;
     }
     
    
- .Section_2 .container-fluid   .Section_Cards .Cards_Card .col-md-3 .info  .caption h6:hoveR{
+ .Section_2 .container-fluid   .Section_Cards .Cards_Card .col-md-4 .info  .caption h6:hoveR{
         background-color: #ec0a0a;
         color: #fff;
     }
     
- .Section_2 .container-fluid  .Section_Cards .Cards_Card .col-md-3 .info  .caption i{
+ .Section_2 .container-fluid  .Section_Cards .Cards_Card .col-md-4 .info  .caption i{
     margin-left: 10%;
     margin-bottom: 9%;
     margin-top: 2%;
@@ -405,7 +373,7 @@ margin-right: 10px;
     cursor: pointer;
     }
     
- .Section_2 .container-fluid  .Section_Cards .Cards_Card .col-md-3 .info  .caption i:hover{
+ .Section_2 .container-fluid  .Section_Cards .Cards_Card .col-md-4 .info  .caption i:hover{
         background-color: #ec0a0a;
         color: #fff;
     }

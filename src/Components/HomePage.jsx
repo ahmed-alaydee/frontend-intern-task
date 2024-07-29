@@ -2,8 +2,8 @@ import "../Components/HomePage.css"
 import { Link } from 'react-router-dom'
 import  pro_1 from "../Components/Pages/img/pic1.png"
 import  pro_2 from "../Components/Pages/img/pic2.png"
-import  banner from "../Components/Pages/img/banner-media3.png"
-import  pic8 from "../Components/Pages/img/pic8.jpg"
+import  banner from "../Components/Pages/img/banner-media3.png";
+import  pic8 from "../Components/Pages/img/pic8.jpg";
 import  pic5 from "../Components/Pages/img/5.png"
 import  pic6 from "../Components/Pages/img/6.png"
 import  pic7 from "../Components/Pages/img/7.png"
@@ -31,7 +31,8 @@ import lady_3  from "../Components/Pages/img/img_popup-view/lady-3.png";
 
 import footer_imge  from "../Components/Pages/img/footer-img.png"
 import SlideHome from "./SlideHome"
-import { useState } from "react"
+import { useState } from "react";
+import phoot from "./Pages/img/circle.png"
 
 
 
@@ -69,7 +70,7 @@ const onchangeimg = (newimg) =>{
 
 
 {/**start   hiddinpopupView*/}
-const [popupVisible, setPopupVisible] = useState(true);
+const [popupVisible, setPopupVisible] = useState(false);
 const  hiddinpopupView = ()=>{
     setPopupVisible(false)
 }
@@ -82,6 +83,8 @@ const Showpopupview = ()=>{
 }
 
 {/**end  Showpopupview*/}
+
+
 
 
     
@@ -188,11 +191,11 @@ return(
    <div className="List">
    <div>
     <ul className="ul_ul">
-        <li data-class='all' className=" active">All</li>
-        <li  data-class='Dresses'>Dresses</li>
-        <li  data-class='Tops'>Tops</li>
-        <li  data-class='Outerwear'>Outerwear</li>
-        <li  data-class='Jacket'>Jacket</li>
+      <button className="btn bg-black">  <li data-class='all' className=" active">All</li></button>
+    <button className="btn bg-black">    <li  data-class='Dresses'>Dresses</li></button>
+    <button className="btn bg-black">    <li  data-class='Tops'>Tops</li></button>
+      <button className="btn bg-black">  <li  data-class='Outerwear'>Outerwear</li></button>
+      <button className="btn bg-black">  <li  data-class='Jacket'>Jacket</li></button>
     </ul>
 </div>
    </div>
@@ -208,7 +211,7 @@ return(
 <div className="Cards_Card">
     <div className="row shufel_images">
 
-        <div className="col-md-3">
+        <div className="col-md-3 col-sm-4">
             <img className="Dresses" src={ge2} alt="" />
 
             <div className="info">
@@ -217,7 +220,10 @@ return(
         <i class="fa-regular fa-heart"></i>
         <i class="fa-solid fa-basket-shopping"></i>
         <div className="buttonn">
-        <Link to="/" className="btn btn-outline-danger " onClick={Showpopupview}>QUICK VIEW </Link>
+        <Link to="/" className="btn btn-danger " onClick={Showpopupview}>QUICK VIEW </Link>
+        <Link to="/shopcart" className="btn btn-danger mt-3 " >Add To Cart </Link>
+        
+
         </div>
                 </div>
             </div>
@@ -226,8 +232,8 @@ return(
              <span>$80</span>
              </div>
         </div>
-
-        <div className="col-md-3 ">
+ 
+        <div className="col-md-3 col-sm-4 ">
             <img className="Dresses" src={pic8} alt="" />
             <div className="info">
                 <div className="caption">
@@ -235,7 +241,9 @@ return(
         <i class="fa-regular fa-heart"></i>
         <i class="fa-solid fa-basket-shopping"></i>
         <div className="buttonn">
-        <Link to="/" className="btn btn-outline-danger " onClick={Showpopupview}>QUICK VIEW </Link>
+        <Link to="/" className="btn btn-danger " onClick={Showpopupview}>QUICK VIEW </Link>
+        <Link to="/shopcart" className="btn btn-danger mt-3 " >Add To Cart </Link>
+
         </div>
                 </div>
             </div>
@@ -245,7 +253,7 @@ return(
              </div>
              </div>
 
-        <div className="col-md-3">
+        <div className="col-md-3 col-sm-4">
             <img className="Tops" src={banner} alt="" />
             <div className="info">
                 <div className="caption">
@@ -253,7 +261,9 @@ return(
         <i class="fa-regular fa-heart"></i>
         <i class="fa-solid fa-basket-shopping"></i>
         <div className="buttonn">
-        <Link to="/" className="btn btn-outline-danger " onClick={Showpopupview}>QUICK VIEW </Link>
+        <Link to="/" className="btn btn-danger " onClick={Showpopupview}>QUICK VIEW </Link>
+        <Link to="/shopcart" className="btn btn-danger mt-3 " >Add To Cart </Link>
+
         </div>
                 </div>
             </div>
@@ -263,7 +273,7 @@ return(
              </div>
         </div>
 
-        <div className="col-md-3">
+        <div className="col-md-3 col-sm-4">
             <img className="Tops" src={pic5} alt="" />
             <div className="info">
                 <div className="caption">
@@ -271,7 +281,9 @@ return(
         <i class="fa-regular fa-heart"></i>
         <i class="fa-solid fa-basket-shopping"></i>
         <div className="buttonn">
-        <Link to="/" className="btn btn-outline-danger " onClick={Showpopupview}>QUICK VIEW </Link>
+        <Link to="/" className="btn btn-danger " onClick={Showpopupview}>QUICK VIEW </Link>
+        <Link to="/shopcart" className="btn btn-danger mt-3 " >Add To Cart </Link>
+
         </div>
                 </div>
             </div>
@@ -281,7 +293,7 @@ return(
              </div>
         </div>
 
-        <div className="col-md-3">
+        <div className="col-md-3 col-sm-4">
             <img className="Outerwear" src={pic6} alt="Outerwear" />
             <div className="info">
                 <div className="caption">
@@ -289,7 +301,9 @@ return(
         <i class="fa-regular fa-heart"></i>
         <i class="fa-solid fa-basket-shopping"></i>
         <div className="buttonn">
-        <Link to="/" className="btn btn-outline-danger "onClick={Showpopupview}>QUICK VIEW </Link>
+        <Link to="/" className="btn btn-danger " onClick={Showpopupview}>QUICK VIEW </Link>
+        <Link to="/shopcart" className="btn btn-danger mt-3 " >Add To Cart </Link>
+
         </div>
                 </div>
             </div>
@@ -299,7 +313,7 @@ return(
              </div>
         </div>
 
-        <div className="col-md-3">
+        <div className="col-md-3 col-sm-4">
             <img className="Outerwear" src={pic7} alt="" />
             <div className="info">
                 <div className="caption">
@@ -307,7 +321,9 @@ return(
         <i class="fa-regular fa-heart"></i>
         <i class="fa-solid fa-basket-shopping"></i>
         <div className="buttonn">
-        <Link to="/" className="btn btn-outline-danger " onClick={Showpopupview}>QUICK VIEW </Link>
+        <Link to="/" className="btn btn-danger " onClick={Showpopupview}>QUICK VIEW </Link>
+        <Link to="/shopcart" className="btn btn-danger mt-3 " >Add To Cart </Link>
+
         </div>
                 </div>
             </div>
@@ -317,7 +333,7 @@ return(
              </div>
         </div>
 
-        <div className="col-md-3">
+        <div className="col-md-3 col-sm-4">
             <img className="Jacket" src={pic9} alt="" />
             <div className="info">
                 <div className="caption">
@@ -325,7 +341,9 @@ return(
         <i class="fa-regular fa-heart"></i>
         <i class="fa-solid fa-basket-shopping"></i>
         <div className="buttonn">
-        <Link to="/" className="btn btn-outline-danger " onClick={Showpopupview}>QUICK VIEW </Link>
+        <Link to="/" className="btn btn-danger " onClick={Showpopupview}>QUICK VIEW </Link>
+        <Link to="/shopcart" className="btn btn-danger mt-3 " >Add To Cart </Link>
+
         </div>
                 </div>
             </div>
@@ -335,7 +353,7 @@ return(
              </div>
         </div>
 
-        <div className="col-md-3">
+        <div className="col-md-3 col-sm-4">
             <img className="Jacket" src={bannermed} alt="" />
             <div className="info">
                 <div className="caption">
@@ -343,7 +361,9 @@ return(
         <i class="fa-regular fa-heart"></i>
         <i class="fa-solid fa-basket-shopping"></i>
         <div className="buttonn">
-        <Link to="/" className="btn btn-outline-danger " onClick={Showpopupview}>QUICK VIEW </Link>
+        <Link to="/" className="btn btn-danger " onClick={Showpopupview}>QUICK VIEW </Link>
+        <Link to="/shopcart" className="btn btn-danger mt-3 " >Add To Cart </Link>
+
         </div>
                 </div>
             </div>
@@ -364,7 +384,7 @@ return(
             <div className="row">
               <div className="popup-card_img col-md-6">
                 <div className="img_back">
-                  <img className="top" src={image} alt="" />
+                  <img className="top" src={image} alt="" onClick={() => onchangeimg(lady_1)}  />
                 </div>
                 <div className="img_Click">
                   <img onClick={() => onchangeimg(lady_1)} src={lady_1} alt="" />
@@ -478,10 +498,12 @@ return(
     <div className="col-md-7">
 <div className="text_contet">
 <h1>Users Who Viewed This<br/> Also Checked Out These <br/>   Similar Profiles</h1>
-    </div>        
+<img src={phoot} alt="logo" />
+    </div>
+
 <div className="row container_img">
 
-    <div className="col-sm-6">
+    <div className="col-md-4">
         <div >
         <img  src={pic7} alt="" />
         <div className="text_img">
@@ -491,7 +513,7 @@ return(
         </div>   
     </div>
 
-    <div className="col-sm-6">
+    <div className="col-md-4">
     <img src={pic8} alt="" />
     <div className="text_img">
         <p>up to 79% off<br/><span >Cozy Knit Cardigan<br/> Sweater</span></p>
@@ -499,15 +521,8 @@ return(
         </div>
 </div>
 
-<div className="col-sm-6">
+<div className="col-md-4">
 <img src={pic9} alt="" />
-<div className="text_img">
-        <p>up to 79% off<br/><span >Cozy Knit Cardigan<br/> Sweater</span></p>
-        <h6>$80 <br/> <del>%95</del></h6>
-        </div>
-</div>
-<div className="col-sm-6">
-<img src={pic5} alt="" />
 <div className="text_img">
         <p>up to 79% off<br/><span >Cozy Knit Cardigan<br/> Sweater</span></p>
         <h6>$80 <br/> <del>%95</del></h6>
@@ -530,7 +545,7 @@ return(
 
 {/**start  section6 Photoback*/}
 
-<div className="Section_6 container">
+<div className="Section_6  container-fluid">
 <h1>Featured offer for you</h1>
 
 <duv className="row">
@@ -630,7 +645,7 @@ return(
 
     <div className="col-md-6">
 <div className="title_info">
-    <Link className="btn btn-outline button_bt">View All</Link>
+    <Link className="btn btn-outline button_bt" to="/ShopPage">View All</Link>
 </div>
 </div>
     </div>
