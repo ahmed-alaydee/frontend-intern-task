@@ -70,6 +70,7 @@ const onchangeimg = (newimg) =>{
 
 
 {/**start   hiddinpopupView*/}
+
 const [popupVisible, setPopupVisible] = useState(false);
 const  hiddinpopupView = ()=>{
     setPopupVisible(false)
@@ -90,7 +91,9 @@ const Showpopupview = ()=>{
     
 return(
    
+
 <>
+
 {/**start section homePage*/}
 <div className=" section_home_head ">
     <div className="row section_1">
@@ -115,7 +118,7 @@ return(
                   <i class="fa-solid fa-plus"></i>
                  </div>
                  <div className="tx_content">
-                    <h1>Collar Casual <br/> Shirt</h1>
+                    <h1>Collar Casual  <span className="span2">Shirt</span></h1>
                     <h6> $18 <del>27</del></h6>
                  </div>
               </div>
@@ -127,7 +130,7 @@ return(
                   <i class="fa-solid fa-plus"></i>
                  </div>
                  <div className="tx_content">
-                    <h1>Collar Casual <br/> Shirt</h1>
+                    <h1>Collar Casual  <span className="span2">Shirt</span></h1>
                     <h6> $18 <del>27</del></h6>
                  </div>
               </div>
@@ -211,7 +214,7 @@ return(
 <div className="Cards_Card">
     <div className="row shufel_images">
 
-        <div className="col-md-3 col-sm-4">
+        <div className="col-md-3 col-sm-4 Caard">
             <img className="Dresses" src={ge2} alt="" />
 
             <div className="info">
@@ -233,7 +236,7 @@ return(
              </div>
         </div>
  
-        <div className="col-md-3 col-sm-4 ">
+        <div className="col-md-3 col-sm-4 Caard">
             <img className="Dresses" src={pic8} alt="" />
             <div className="info">
                 <div className="caption">
@@ -242,7 +245,7 @@ return(
         <i class="fa-solid fa-basket-shopping"></i>
         <div className="buttonn">
         <Link to="/" className="btn btn-danger " onClick={Showpopupview}>QUICK VIEW </Link>
-        <Link to="/shopcart" className="btn btn-danger mt-3 " >Add To Cart </Link>
+        <Link to="/shopcart" className="btn btn-danger  " >Add To Cart </Link>
 
         </div>
                 </div>
@@ -253,7 +256,7 @@ return(
              </div>
              </div>
 
-        <div className="col-md-3 col-sm-4">
+        <div className="col-md-3 col-sm-4 Caard">
             <img className="Tops" src={banner} alt="" />
             <div className="info">
                 <div className="caption">
@@ -273,7 +276,7 @@ return(
              </div>
         </div>
 
-        <div className="col-md-3 col-sm-4">
+        <div className="col-md-3 col-sm-4 Caard ">
             <img className="Tops" src={pic5} alt="" />
             <div className="info">
                 <div className="caption">
@@ -293,7 +296,7 @@ return(
              </div>
         </div>
 
-        <div className="col-md-3 col-sm-4">
+        <div className="col-md-3 col-sm-4 Caard">
             <img className="Outerwear" src={pic6} alt="Outerwear" />
             <div className="info">
                 <div className="caption">
@@ -313,7 +316,7 @@ return(
              </div>
         </div>
 
-        <div className="col-md-3 col-sm-4">
+        <div className="col-md-3 col-sm-4 Caard">
             <img className="Outerwear" src={pic7} alt="" />
             <div className="info">
                 <div className="caption">
@@ -333,7 +336,7 @@ return(
              </div>
         </div>
 
-        <div className="col-md-3 col-sm-4">
+        <div className="col-md-3 col-sm-4 Caard">
             <img className="Jacket" src={pic9} alt="" />
             <div className="info">
                 <div className="caption">
@@ -353,7 +356,7 @@ return(
              </div>
         </div>
 
-        <div className="col-md-3 col-sm-4">
+        <div className="col-md-3 col-sm-4 Caard">
             <img className="Jacket" src={bannermed} alt="" />
             <div className="info">
                 <div className="caption">
@@ -454,14 +457,15 @@ return(
 
 </div>
 {/**end section3 Cardsr*/}
-{/**====================================================================*/}
+{/**======================
+ * ==============================================*/}
 
 {/**start section4 Background*/}
 
 <div className="Section_Background">
 
 <div className="row">
-<div className="col back_1">
+<div className="col-md-6 back_1">
     <div className="backkk">
     <p>Sale Up to 50% Off</p>
 <h2>SUMMER <br/> <span>2023</span></h2>
@@ -469,7 +473,7 @@ return(
 </div>
 </div>
 
-<div className="col back_2">
+<div className="col-md-6 back_2">
     <div className="Teaxt">
     <p>Sale Up to 50% Off</p>
 <h1>NEW SUMMERE <br/>COLLection</h1>
@@ -490,7 +494,7 @@ return(
 
 <div className="row">
 
-    <div className="col-md-4 img_img">
+    <div className="col-md-4  img_img">
 <img src={product3} alt="product3" />
     </div>
 
@@ -503,7 +507,7 @@ return(
 
 <div className="row container_img">
 
-    <div className="col-md-4">
+    <div className="col-md-4 colmd_4_2">
         <div >
         <img  src={pic7} alt="" />
         <div className="text_img">
@@ -513,7 +517,7 @@ return(
         </div>   
     </div>
 
-    <div className="col-md-4">
+    <div className="col-md-4 colmd_4_2">
     <img src={pic8} alt="" />
     <div className="text_img">
         <p>up to 79% off<br/><span >Cozy Knit Cardigan<br/> Sweater</span></p>
@@ -521,7 +525,7 @@ return(
         </div>
 </div>
 
-<div className="col-md-4">
+<div className="col-md-4 colmd_4_3">
 <img src={pic9} alt="" />
 <div className="text_img">
         <p>up to 79% off<br/><span >Cozy Knit Cardigan<br/> Sweater</span></p>
@@ -636,7 +640,10 @@ return(
 {/**START  section8 LatestPost img*/}
 
 <div className="section_8_lastesr_post">
-<h1 className="title_text">Latest Post</h1> 
+    <div className="title">
+    <h1 className="title_text">Latest Post</h1> 
+    </div>
+
 
     <div class="row">
     <div className="col-md-6">
@@ -659,7 +666,7 @@ return(
 </div>
 <div className="Z_index_info">
     <div className="inf">
-    <h2> <span className="info_top">17 May 2023</span> <br/> Trendsetter Chronicles: Unveiling the Latest in Fashion</h2>
+    <h2> <span className="info_top">17 May 2023</span> <br/>  <br/> Trendsetter Chronicles: Unveiling the Latest in Fashion</h2>
     <span>Read More <i class="fa-solid fa-chevron-right"></i></span>
     </div>
 
@@ -733,7 +740,6 @@ Dress to Impress: Elevate Your Everyday Style
             <li>Subscribe To Our Newsletter</li>
         </ul>
         <input type="email" placeholder="Enter Your Email"  />
-     
       
     </div>
 </div>
